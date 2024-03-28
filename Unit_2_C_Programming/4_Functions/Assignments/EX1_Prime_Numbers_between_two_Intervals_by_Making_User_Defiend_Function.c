@@ -1,8 +1,8 @@
 /*
  ======================================================================================================================
- Name        : EX2_C_Program_To_Find_The_Length_of_a_String.c
+ Name        : EX1_Prime_Numbers_between_two_Intervals_by_Making_User_Defiend_Function.c
  Author      : Mohamed Fathalla Ahmed
- Created on	 : 24.03.2024
+ Created on	 : 28.03.2024
  Description : Unit 2 C-Progtamming >> Assignment 3_Functions >> Complier/Linker Option: gcc -ansi -std=c89 Ansi-style 
  ======================================================================================================================
  */
