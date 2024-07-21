@@ -10,8 +10,8 @@
 int main (void)
 {
 	char temp_text[40];
-	//int num = 0;
-	//struct SStudentNode *gpStudent = NULL ;
+	int num = 0;
+	struct SStudentNode *gpStudent = NULL ;
 
 
 
@@ -23,14 +23,12 @@ int main (void)
 			DPRINTF("\n\t 2: Delete Student");
 			DPRINTF("\n\t 3: View Students");
 			DPRINTF("\n\t 4: Delete All");
-			/*DPRINTF("\n\t 5: Get Node");
+			DPRINTF("\n\t 5: Get Node");
 			DPRINTF("\n\t 6: Get Students counter by Iteration");
 			DPRINTF("\n\t 7: Get Students counter by Recursion");
 			DPRINTF("\n\t 8: Get Node from the end");
 			DPRINTF("\n\t 9: Get Middle student");
-			DPRINTF("\n\t 10: Reverse student");
-			DPRINTF("\n\n Enter option number: ");*/
-			DPRINTF("\n\t 11: Exit");
+			DPRINTF("\n\t 10: Exit");
 			DPRINTF("\n ============================= \n");
 
 			gets(temp_text);
@@ -53,7 +51,7 @@ int main (void)
 					list_delete_all();
 					break;
 
-				/*case 5:
+				case 5:
 					DPRINTF("Enter Node Number: ");
 					gets(temp_text);
 					num = atoi(temp_text);
@@ -62,12 +60,13 @@ int main (void)
 
 				case 6:
 					num = list_students_count_iterative();
-					DPRINTF("Student Numbers : %d\n", num);
+					DPRINTF("Student Numbers calculated by iterative function: %d\n", num);
 					break;
 
 				case 7:
+					gpStudent = gpFirstStudent;
 					num = list_students_count_recursive(gpStudent);
-					DPRINTF("Student Numbers : %d\n", num);
+					DPRINTF("Student Numbers calculated by recursive function : %d\n", num);
 					break;
 
 				case 8:
@@ -82,10 +81,6 @@ int main (void)
 					break;
 
 				case 10:
-					list_reverse_students();
-					break;
-				*/
-				case 11:
 					DPRINTF("\n Session closed, See you later ;) \n\n");
 					return 0;
 
