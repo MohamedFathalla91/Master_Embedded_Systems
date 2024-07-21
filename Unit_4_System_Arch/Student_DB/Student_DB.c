@@ -73,10 +73,7 @@ void list_add_student(void){
 
 // Delete a student from the list - Function Definition:
 int list_delete_student(void){
-
-
 	char temp_text[40];
-
 	int selected_id;
 	// Get the selected ID from the user
 	DPRINTF("\nEnter Student ID to be deleted: ");
@@ -212,7 +209,6 @@ int list_students_count_recursive(struct SStudentNode *list){
 void list_get_node_from_end(int index){
 	int len=0;
 	int new_index;
-	//struct SStudentNode * pCurrentStudent = gpFirstStudent;
 	if (gpFirstStudent == NULL)
 		DPRINTF("\n \n List is Empty !!!\n \n");
 
@@ -232,18 +228,38 @@ void list_get_node_from_end(int index){
 void list_get_middle_student(void){
 
 	// Check if the list is empty
-		if(gpFirstStudent == NULL)
+	if(gpFirstStudent == NULL)
+	{
+		DPRINTF("\n \n List is Empty !!!\n \n");
+	}
+
+	// Get Student number
+	int num = 0;
+
+	// Get number of nodes in the list
+	num = list_students_count_iterative();
+
+	// Get the index we want
+	list_get_node(num/2);
+}
+
+// Reverse the arrangement of the list  - Function Definition:
+void list_reverse_students(void) {
+
+	if (gpFirstStudent)
+	{
+		struct SStudentNode * pCurrentStudent = gpFirstStudent;
+		struct SStudentNode *pPreviousStudent = NULL;
+		struct SStudentNode *pNextStudent = NULL;
+		while(pCurrentStudent != NULL)
 		{
-			DPRINTF("\n \n List is Empty !!!\n \n");
+			pNextStudent                   =  pCurrentStudent->PNextStudent;
+			pCurrentStudent->PNextStudent  =  pPreviousStudent;
+			pPreviousStudent               =  pCurrentStudent ;
+			pCurrentStudent				   =  pNextStudent;
 		}
+		gpFirstStudent = pPreviousStudent;
+	}
 
-		// Get Student number
-		int num = 0;
-
-		// Get number of nodes in the list
-		num = list_students_count_iterative();
-
-		// Get the index we want
-		list_get_node(num/2);
 }
 
