@@ -22,15 +22,14 @@ void setup()
 int main (void)
 {
 	printf("\nStart PRoject from Scratch\n");
-	volatile int d ;
 	setup();
 	int i = 0;
+	// Testing of just 25 entries
 	for (i=0; i<25; i++)
 	{
 		US_state();
 		CA_state();
 		DC_state();
-		for (d = 0; d<=10000; d++);
 	}
 
 }

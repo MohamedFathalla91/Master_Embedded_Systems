@@ -22,8 +22,7 @@ void DC_Motor (int s)
 {
 	DC_speed = s;
 	DC_state = STATE(DC_busy);
-	printf("DC_Motor Running with Current Speed %d !\n", DC_speed);
-
+	printf("CA --------- DC_Motor Running with Current Speed %d -------> DC!\n", DC_speed);
 }
 
 STATE_define(DC_idle)
@@ -36,9 +35,8 @@ STATE_define(DC_idle)
 STATE_define(DC_busy)
 {
 	DC_state_id = DC_busy;
-	printf("DC busy state: Current Speed %d !\n", DC_speed);
 	DC_Motor(DC_speed);
-	printf("DC Motor speed has been set to %d & then going to idle\n", DC_speed);
+	printf("DC_busy: DC Motor speed has been set to %d & then going to idle\n", DC_speed);
 	DC_state = STATE(DC_idle);
 }
 

@@ -23,7 +23,7 @@ STATE_define(US_busy)
 {
 	US_state_id = US_busy;
 	US_distance = US_Get_distance_random (45,55,1);
-	printf("***CA_waiting state: Current Distance %d !\n", US_distance);
+	printf("***US_waiting state: Current Distance %d !\n", US_distance);
 	US_Set_distance(US_distance);
 	US_state = STATE(US_busy);
 }
