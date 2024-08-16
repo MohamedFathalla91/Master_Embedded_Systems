@@ -12,7 +12,6 @@
 int main (void){
 
 	char temp_text[40];
-	//int num = 0;
 	student_queue = createQueue_student();
 	DPRINTF("Welcome to the Student Management System \n");
 	while (1)

@@ -40,6 +40,7 @@ typedef struct St_Queue {
 extern St_Queue* student_queue ;
 extern int count;
 extern FILE* filePointer;
+
 // Functions / APIs:
 
 // Function to create a new node / Student
@@ -51,24 +52,34 @@ St_Queue* createQueue_student();
 // Function to add an element to the queue
 void enqueue_student(struct sinfo student_data);
 
+// Function to add the student manually to the queue
 void add_student_manually();
 
+// Function to add the student from the file to the queue
 void add_student_file();
 
+// Function to check the roll number of the student in the queue
 int check_roll(int num);
 
+// Function to update the student data in the queue
 void up_s();
 
+// Function to find the student with his roll number in the queue
 void find_rl();
 
+// Function to find the student with his first name in the queue
 void find_fn();
 
+// Function to find the student with his course in the queue
 void find_c();
 
+// Function to calculate the total number of students in the queue
 void tot_s();
 
+// Function to remove the student manually from the queue
 void del_s();
 
+// Function to display single studen 
 void display_student(int rl);
 
 // Function to display the queue (all students)
