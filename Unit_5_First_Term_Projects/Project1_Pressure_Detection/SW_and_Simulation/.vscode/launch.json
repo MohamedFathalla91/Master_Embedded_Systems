@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "e:/_Diploma/Guide_5_First_Term_Finals/Proj_1/FIRST_TERM_project1/Src",
-      "program": "e:/_Diploma/Guide_5_First_Term_Finals/Proj_1/FIRST_TERM_project1/Src/build/Debug/outDebug",
+      "cwd": "e:/_Diploma/Guide_5_First_Term_Finals/Proj_1/FIRST_TERM_project1/HW_project_KIT_FIRST_TERM_project1",
+      "program": "e:/_Diploma/Guide_5_First_Term_Finals/Proj_1/FIRST_TERM_project1/HW_project_KIT_FIRST_TERM_project1/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

@@ -7,8 +7,10 @@ void alarm_handling_func()
     if (HighPressureDetected)
     {
         AlarmON();
-        Delay(1000);
+        Delay(1000000);
+        AlarmOFF();
     } else {
         AlarmOFF();
+        Delay(500000);
     }
 }

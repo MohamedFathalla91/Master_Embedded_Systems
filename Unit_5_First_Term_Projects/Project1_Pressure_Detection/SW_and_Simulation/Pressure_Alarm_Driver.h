@@ -7,7 +7,7 @@ void AlarmON();
 
 void AlarmOFF();
 
-
+void init_alarm();
 
 
 
