@@ -59,5 +59,6 @@
   "files.associations": {
     "pressure_sensor_driver.h": "c",
     "pressure_alarm_driver.h": "c"
-  }
+  },
+  "makefile.configureOnOpen": false
 }
