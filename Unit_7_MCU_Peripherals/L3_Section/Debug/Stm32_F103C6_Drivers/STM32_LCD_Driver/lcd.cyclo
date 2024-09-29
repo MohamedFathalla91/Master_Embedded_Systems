@@ -1,0 +1,10 @@
+../Stm32_F103C6_Drivers/STM32_LCD_Driver/lcd.c:21:6:LCD_GPIO_init	1
+../Stm32_F103C6_Drivers/STM32_LCD_Driver/lcd.c:94:6:LCD_INIT	1
+../Stm32_F103C6_Drivers/STM32_LCD_Driver/lcd.c:115:6:LCD_clear_screen	1
+../Stm32_F103C6_Drivers/STM32_LCD_Driver/lcd.c:124:6:LCD_WRITE_COMMAND	1
+../Stm32_F103C6_Drivers/STM32_LCD_Driver/lcd.c:149:6:LCD_WRITE_CHAR	1
+../Stm32_F103C6_Drivers/STM32_LCD_Driver/lcd.c:177:6:LCD_WRITE_STRING	4
+../Stm32_F103C6_Drivers/STM32_LCD_Driver/lcd.c:206:6:LCDisbusy	2
+../Stm32_F103C6_Drivers/STM32_LCD_Driver/lcd.c:235:6:LCD_GOTO_XY	5
+../Stm32_F103C6_Drivers/STM32_LCD_Driver/lcd.c:252:6:LCD_ENABLE_SIGNAL	1
+../Stm32_F103C6_Drivers/STM32_LCD_Driver/lcd.c:258:6:_delay_ms	3
